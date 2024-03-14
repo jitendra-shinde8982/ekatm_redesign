@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/component.css">
+</head>
+
+<body>
+    <div class="main">
+    
+        <div class="main-panel">
+            <div>
+                <div class="horizontal-nav pst-rel">
+                    <div class="logo">
+                        <img src="asset/images/ekatm_logo.png" alt="" class="logo-img">
+                        <div id="openmenu" style="display: none;">
+                            <span class="d-none-block" id="showicon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 31 23"
+                                    fill="none">
+                                    <path d="M2 21H29M2 11.5H29M2 2H29" stroke="#0063A9" stroke-width="3"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </span>
+                            <span class="d-none-block" id="closeicon" style="display: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 26 23"
+                                    fill="none">
+                                    <path d="M2 21L24.5 2M2 2L24.5 21" stroke="#0063A9" stroke-width="3"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="width30per w-maxC-resp mar-auto">
+                        <p class="Dashboard-Subheading d-none-resp">Hello, Gauri Welcome to <span>Ekatm</span></p>
+                    </div>
+                    <div class="width40per d-none-resp search_box">
+                        <div class="subdiv_search">
+                            <input type="text" placeholder="Search" class="input-search">
+                            <button class="btn_search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 22 22"
+                                    fill="none">
+                                    <path
+                                        d="M21.0498 22L12.6422 13.5925C11.9709 14.164 11.1988 14.6064 10.3261 14.9197C9.45329 15.233 8.57621 15.3897 7.69483 15.3897C5.54424 15.3897 3.72412 14.6453 2.23449 13.1564C0.744829 11.6676 0 9.84846 0 7.69904C0 5.54961 0.744415 3.72907 2.23325 2.23744C3.72208 0.745815 5.5412 0 7.69063 0C9.84008 0 11.6606 0.744819 13.1522 2.23446C14.6438 3.7241 15.3897 5.54422 15.3897 7.69484C15.3897 8.62785 15.2244 9.53074 14.8939 10.4035C14.5634 11.2763 14.1296 12.0225 13.5925 12.6423L22 21.0498L21.0498 22ZM7.69483 14.047C9.47653 14.047 10.9806 13.4337 12.2071 12.2072C13.4337 10.9806 14.0469 9.47652 14.0469 7.69484C14.0469 5.91316 13.4337 4.40905 12.2071 3.18252C10.9806 1.95599 9.47653 1.34272 7.69483 1.34272C5.91315 1.34272 4.40905 1.95599 3.18252 3.18252C1.95601 4.40905 1.34275 5.91316 1.34275 7.69484C1.34275 9.47652 1.95601 10.9806 3.18252 12.2072C4.40905 13.4337 5.91315 14.047 7.69483 14.047Z"
+                                        fill="white"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="width30per mar-t10px w-50per-resp">
+                        <button class="icon-right btn-module">
+                            <img src="asset/images/user_logo.png" alt="">
+                        </button>
+    
+    
+    
+                        <button class="btn-module icon-right " id="toggleButton">
+                            <img src="asset/images/icon_module.png" id="myImage" alt="">
+                        </button>
+    
+                        <button class="btn-module icon-right">
+                            <img src="asset/images/notification_icon.png" alt="">
+                        </button>
+    
+    
+    
+                        <button id="serchboxshow" class="icon-right btn-module d-none-block">
+                            <img src="asset/images/search_icon.png" alt="">
+                        </button>
+    
+    
+                    </div>
+                    <div class="module_Box" id="my_Div" style="display: none;">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" viewBox="0 0 25 22" fill="none">
+                                <path d="M12.5 0L24.1913 21.75H0.808657L12.5 0Z" fill="#EBEBEB"></path>
+                            </svg>
+                        </span>
+                        <div class="module_subBox">
+    
+                            <div class="module_containBox">
+                                <img src="asset/images/workbench.png" alt="">
+                                <p>Workbench</p>
+                            </div>
+                            <div class="module_containBox">
+                                <img src="asset/images/workbench.png" alt="">
+                                <p>Workbench</p>
+                            </div>
+                            <div class="module_containBox">
+                                <img src="asset/images/workbench.png" alt="">
+                                <p>Workbench</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module_Box width300px" id="my_Div_2" style="display: none;">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" viewBox="0 0 25 22" fill="none">
+                                <path d="M12.5 0L24.1913 21.75H0.808657L12.5 0Z" fill="#EBEBEB"></path>
+                            </svg>
+                        </span>
+                        <div class="module_subBox pst-rel padd-0">
+                            <div class="width100per">
+                                <img src="asset/images/profileBG.png" alt="" style="width: 100%;">
+                                <img src="asset/images/profile_pic.png" alt="" class="profileIconImage">
+                            </div>
+                            <div class="width100per mar-t20px">
+                                <h3 class="profileName">Jitendra Shinde</h3>
+                                <p class="profileDepartment">Enterprise product</p>
+                                <div>
+                                    <button class="btn-filters" style="display: flex;">
+                                        Manage account
+    
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mar-l5px" width="22" height="21"
+                                            viewBox="0 0 22 21" fill="none">
+                                            <rect x="0.5" width="21" height="21" fill="white" />
+                                            <path d="M18.5 11H12.5V17H10.5V11H4.5V9H10.5V3H12.5V9H18.5V11Z"
+                                                fill="#0063A9" />
+                                        </svg>
+    
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="serchbox-resp d-none-block" id="serachBox" style="display: none;">
+    
+    
+                    <div class="width100per">
+                        <input type="text" placeholder="Search" class="input-search mar-0">
+                    </div>
+    
+                </div>
+            </div>
+            <div class="hori_submenu pst-rel padd_b8">
+                <div class="Module_menu pst-rel">
+                    <button class="btn-filters padd-3_6px mar_r15">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8 7.69231H13.0769C13.3231 7.69231 13.5385 7.47692 13.5385 7.23077V6.30769C13.5385 6.06154 13.3231 5.84615 13.0769 5.84615H8C7.81538 5.84615 7.69231 5.72308 7.69231 5.53846V0.461538C7.69231 0.215385 7.47692 0 7.23077 0H6.30769C6.06154 0 5.84615 0.215385 5.84615 0.461538V5.53846C5.84615 5.72308 5.72308 5.84615 5.53846 5.84615H0.461538C0.215385 5.84615 0 6.06154 0 6.30769V7.23077C0 7.47692 0.215385 7.69231 0.461538 7.69231H5.53846C5.72308 7.69231 5.84615 7.81538 5.84615 8V13.0769C5.84615 13.3231 6.06154 13.5385 6.30769 13.5385H7.23077C7.47692 13.5385 7.69231 13.3231 7.69231 13.0769V8C7.69231 7.81538 7.81538 7.69231 8 7.69231Z"
+                                fill="#0063A9"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" width="16" height="10"
+                            viewBox="0 0 16 2" fill="none">
+                            <rect width="16" height="2" rx="1" fill="#0063A9"></rect>
+                        </svg>
+                    </button>
+                    <span class="module_MainLable">Workbench</span>
+                    <span class="polygon_menu_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                            <path d="M6.5 -1.31134e-06L12.9952 11.25L0.00481135 11.25L6.5 -1.31134e-06Z" fill="#1589EE">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+                <div class="cust_hori_scroll module_submenu">
+                    <div class="sub_label box-brd">
+    
+                        <span class="name_menu ">Management</span>
+                        <span class="mar-t4r6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.6456 5.47668L8.33792 11.8459C8.1533 12.0305 7.84561 12.0305 7.661 11.8459L1.35331 5.47668C1.16869 5.29207 1.16869 4.98438 1.35331 4.79976L2.03023 4.12284C2.21484 3.93822 2.52254 3.93822 2.70715 4.12284L7.661 9.13822C7.84561 9.32284 8.1533 9.32284 8.33792 9.13822L13.2918 4.15361C13.4764 3.96899 13.7841 3.96899 13.9687 4.15361L14.6456 4.83053C14.7995 5.01514 14.7995 5.29207 14.6456 5.47668Z"
+                                    fill="#747474"></path>
+                            </svg>
+                        </span>
+                        <div class="hori_dropdown" style="display: none;">
+                            <ul class="mar_padd-0">
+                                <li class="hori_dropdown_li">
+                                    <span class="dropdown_liHeading">Performance Report </span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 11 12"
+                                            fill="none">
+                                            <path
+                                                d="M8.15472 7.60439C7.82348 7.60439 7.55496 7.32943 7.55496 6.99026V3.41414C7.55496 2.20886 6.59732 1.22826 5.42021 1.22826C4.24313 1.22826 3.28547 2.20884 3.28547 3.41414V5.49409C3.28547 5.83326 3.01694 6.10822 2.6857 6.10822C2.35446 6.10822 2.08594 5.83326 2.08594 5.49409V3.41414C2.08594 1.53157 3.58168 0 5.42021 0C7.25875 0 8.75449 1.53157 8.75449 3.41414V6.99026C8.75449 7.32943 8.48596 7.60439 8.15472 7.60439Z"
+                                                fill="#B1B4B5"></path>
+                                            <path
+                                                d="M9.06939 11.3239H1.77091C1.0895 11.3239 0.537109 10.7583 0.537109 10.0606V5.73992C0.537109 5.04219 1.0895 4.47656 1.77091 4.47656H9.06939C9.7508 4.47656 10.3032 5.04219 10.3032 5.73992V10.0606C10.3032 10.7583 9.7508 11.3239 9.06939 11.3239Z"
+                                                fill="#FFB636"></path>
+                                        </svg>
+                                    </span>
+                                </li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hori_submenu pst-rel padd_b8">
+                <span class="workNav_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                        <path d="M6.5 12L0.00480941 0.75L12.9952 0.750001L6.5 12Z" fill="#1589EE"></path>
+                    </svg>
+                </span>
+                <div class="cust_hori_scroll work_nav">
+                    <div class="sub_label ">
+    
+                        <span class="name_menu ">Work status</span>
+                        <span class="mar-t4r6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.6456 5.47668L8.33792 11.8459C8.1533 12.0305 7.84561 12.0305 7.661 11.8459L1.35331 5.47668C1.16869 5.29207 1.16869 4.98438 1.35331 4.79976L2.03023 4.12284C2.21484 3.93822 2.52254 3.93822 2.70715 4.12284L7.661 9.13822C7.84561 9.32284 8.1533 9.32284 8.33792 9.13822L13.2918 4.15361C13.4764 3.96899 13.7841 3.96899 13.9687 4.15361L14.6456 4.83053C14.7995 5.01514 14.7995 5.29207 14.6456 5.47668Z"
+                                    fill="#747474"></path>
+                            </svg>
+                        </span>
+                        <div class="hori_dropdown width250px" style="display: none;">
+                            <ul class="mar_padd-0">
+                                <li class="hori_dropdown_li">
+                                    <span class="dropdown_liHeading">Work Status</span>
+                                    <span class="work_Num">03</span>
+                                </li>
+    
+                                <li class="hori_dropdown_li">
+                                    <span class="dropdown_liHeading">Today</span>
+                                    <span class="work_Num">01</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-cards">
+    
+                <div class="panel-sub-cards pst-rel">
+                    <div class="step-wizard">
+                        <ul class="step-wizard-list ">
+                            <li class="step-wizard-item">
+                                <span class="progress-count">1</span>
+                                <span class="progress-label">Select Designation</span>
+                            </li>
+                            <li class="step-wizard-item current-item">
+                                <span class="progress-count">2</span>
+                                <span class="progress-label">Add Details</span>
+                            </li>
+                            <li class="step-wizard-item current-item">
+                                <span class="progress-count ">3</span>
+                                <span class="progress-label">Add Responsibilities</span>
+                            </li>
+    
+                        </ul>
+                    </div>
+                    <div class="mainHeading">
+                        <div class="mainLabel">Add the details required</div>
+                    </div>
+    
+                    <div class="mainFormField dFlexForm">
+    
+    
+                        <div class="fromGroupDistance width100per">
+                            <div class="mar-b6px">
+                                <label for="" class="fromControlLabel">Add remark ( any special requirement)</label>
+                            </div>
+                            <div class="pst-rel">
+                                <textarea type="text" class="fromControlFields " rows="6"></textarea>
+    
+    
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="mainFormField dFlexForm">
+                        <div class="fromGroupDistance width100per">
+                            <div class="mar-b6px">
+                                <label for="" class="fromControlLabel">Justification</label>
+                            </div>
+                            <div class="pst-rel">
+                                <textarea type="text" class="fromControlFields " rows="6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainFormField dFlexForm">
+                        <div class="fromGroupDistance width50per">
+                            <div class="mar-b6px">
+                                <label for="" class="fromControlLabel">Location</label>
+                            </div>
+                            <div class="pst-rel">
+                                <input type="text" class="fromControlFields ">
+                            </div>
+                        </div>
+                        <div class="fromGroupDistance paddT10pxResp  width50per">
+                            <div class="mar-b6px">
+                                <label for="" class="fromControlLabel">Gender</label>
+                            </div>
+                            <div class="pst-rel padd-8px">
+                                <label class="padd-r15px">
+                                    <input type="radio" id="test1" name="radio-group" checked="">
+                                    <label for="test1">Male</label>
+                                </label>
+                            <label class="padd-r15px">
+                                    <input type="radio" id="test2" name="radio-group" checked="">
+                                    <label for="test2">Female</label>
+                                </label><label class="padd-r15px">
+                                    <input type="radio" id="test3" name="radio-group" checked="">
+                                    <label for="test3">Any</label>
+                                </label></div>
+                        </div>
+                    </div>
+                    <div class="mainFormField dFlexForm">
+                        <div class="fromGroupDistance width100per">
+                            <div class="mar-b6px">
+                                <label for="" class="fromControlLabel">Language preference</label>
+                            </div>
+                            <div class="pst-rel">
+                                <input type="text" class="fromControlFields ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainFormField dFlexForm">
+                        <div class="fromGroupDistance width-18Per">
+                            <div class="mar-b6px">
+                                <label for="" class="fromControlLabel">Experience from</label>
+                            </div>
+                            <div class="pst-rel">
+                                <input type="text" class="fromControlFields ">
+                            </div>
+                        </div>
+                    <div class="fromGroupDistance width-2per">
+                            <div>
+                                <label for="" class="fromControlLabel visbily_h">dummy Name</label>
+                            </div>
+                            <div class="pst-rel">
+                       <span class="midle_txtField">
+                                    To
+                       </span>
+                            </div>
+                        </div><div class="fromGroupDistance width-18Per">
+                            <div class="mar-b6px">
+                                <label for="" class="fromControlLabel visbily_h">dummy Name</label>
+                            </div>
+                            <div class="pst-rel">
+                                <input type="text" class="fromControlFields ">
+                            </div>
+                        </div></div>
+                    <div class="mainFormField dFlexForm">
+                        <div class="fromGroupDistance width-18Per">
+                            <div class="mar-b6px">
+                                <label for="" class="fromControlLabel">Relevant experience </label>
+                            </div>
+                            <div class="pst-rel">
+                                <input type="text" class="fromControlFields ">
+                            </div>
+                        </div>
+                    </div><div class="mainFormField dFlexForm">
+                        <div class="fromGroupDistance width-18Per">
+                            <div class="mar-b6px">
+                                <label for="" class="fromControlLabel">No of openining</label>
+                            </div>
+                            <div class="pst-rel">
+                                <input type="text" class="fromControlFields ">
+                            </div>
+                        </div>
+                    </div><div class="mainFormField dFlexForm">
+                        <div class="fromGroupDistance width-18Per">
+                            <div class="mar-b6px">
+                                <label for="" class="fromControlLabel">Mode of employment</label>
+                            </div>
+                            <div class="pst-rel">
+                                <select type="text" class="fromControlFields ">
+                                    <option>select</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><div class="mainFormField dFlexForm">
+                        <div class="fromGroupDistance width-18Per">
+                            <div class="mar-b6px">
+                                <label for="" class="fromControlLabel">CTC From</label>
+                            </div>
+                            <div class="pst-rel">
+                                <input type="text" class="fromControlFields ">
+                            </div>
+                        </div>
+                    <div class="fromGroupDistance width-2per">
+                            <div>
+                                <label for="" class="fromControlLabel visbily_h">dummy Name</label>
+                            </div>
+                            <div class="pst-rel">
+                                <span class="midle_txtField">To</span>
+                            </div>
+                        </div>
+                        <div class="fromGroupDistance width-18Per">
+                            <div class="mar-b6px">
+                                <label for="" class="fromControlLabel visbily_h">dummy Name</label>
+                            </div>
+                            <div class="pst-rel">
+                                <input type="text" class="fromControlFields ">
+                            </div>
+                        </div>
+                        <div class="fromGroupDistance width-2per">
+                            <div><label for="" class="fromControlLabel visbily_h">dummy Name</label></div>
+                            <div class="pst-rel" ><span class="midle_txtField">Lakh</span></div>
+                        </div>
+                    </div>
+                    <div class="mainFormField dFlexForm">
+                        <div class="fromGroupDistance width-18Per">
+                            <div class="mar-b6px">
+                                <label for="" class="fromControlLabel">Requirement</label>
+                            </div>
+                            <div class="pst-rel">
+                                <select type="text" class="fromControlFields ">
+                                    <option>select</option>
+                                </select>
+                            </div>
+                        </div>
+                    <div class="fromGroupDistance paddT10pxResp width-18Per">
+                            <div class="mar-b6px">
+                                <label for="" class="fromControlLabel ">On Date </label>
+                            </div>
+                            <div class="pst-rel">
+                                <input type="Date" class="fromControlFields ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainFormField dFlexForm">
+                        <div class="fromGroupDistance width-18Per">
+                            <div class="mar-b6px">
+                                <label for="" class="fromControlLabel">Is Assets required ?</label>
+                            </div>
+                            <div class="pst-rel">
+                                <select type="text" class="fromControlFields ">
+                                    <option>select</option>
+                                </select>
+                            </div>
+                        </div>
+                    <div class="fromGroupDistance paddT10pxResp width-18Per">
+                            <div class="mar-b6px">
+                                <label for="" class="fromControlLabel">Do you have a vehicle?</label>
+                            </div>
+                            <div class="pst-rel">
+                                <select type="text" class="fromControlFields ">
+                                    <option>select</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="fromGroupDistance paddT10pxResp  width-18Per">
+                            <div class="mar-b6px">
+                                <label for="" class="fromControlLabel">Is work table available ?</label>
+                            </div>
+                            <div class="pst-rel">
+                                <select type="text" class="fromControlFields ">
+                                    <option>select</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainFormField dFlexForm text-right">
+                        <div class="fromGroupDistance width100per mar-b20px">
+                            <button class="secondary_small_btn mar-5">Cancel</button>
+                            <button class="primary_small_btn mar-5">Submit and preview</button>
+                        </div>
+                    </div>
+                    <div class="main_popup" style="display: none;">
+                        <div class="main_popupcontainer width95per display_flex">
+                            <div class="width50per popupscroll scroll_shadow">
+                                <div class="RRFview">
+                                    <h3 class="designation_heading">Android Developer</h3>
+                                    <h5 class="loc_heading">Pune</h5>
+                                </div>
+                    
+                                <div class="padd-20px">
+                                    <h3 class="mar-0">Job description</h3>
+                                    <p class="job_description">We are seeking an Android Developer who possesses a passion for pushing
+                                        mobile
+                                        technologies to the limits. This individual will collaborate with our team of talented engineers to
+                                        design and
+                                        build the next generation of our mobile applications. Android programming entails close
+                                        collaboration with other
+                                        app development and technical teams.</p>
+                                </div>
+                                <div class="padd-20px">
+                                    <h3 class="mar-0">KRA</h3>
+                                    <p class="job_description">Design and build advanced applications for the Android platform.
+                                        Collaborate with cross-functional teams to define, design, and ship new features.
+                                        Work with outside data sources and APIs.
+                                        Unit-test code for robustness, including edge cases, usability, and general reliability.
+                                        Work on bug fixing and improving application performance.
+                                        Continuously discover, evaluate, and implement new technologies to maximize development efficiency.
+                                    </p>
+                                </div>
+                                <div class="padd-20px">
+                                    <h3 class="mar-0">Required skills</h3>
+                                    <p class="job_description">BS/MS degree in Computer Science, Engineering, or a related subject.
+                                        Proven software development experience and Android skills development.
+                                        Proven working experience in Android app development.
+                                    </p>
+                                </div>
+                                <div class="padd-20px">
+                                    <h3 class="mar-0">Desired Skills:</h3>
+                                    <p class="job_description">Previous experience in Android app development.
+                                        Familiarity with technologies and tools related to Android development.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="width50per rrf_view_info">
+                                <div class="designation_label">
+                                    <p class="heading-info">Designation </p>
+                                    <p class="heading-subinfo">Android Developer </p>
+                                </div>
+                                <div class="heading-mar">
+                                    <p class="heading-info">Plant </p>
+                                    <p class="heading-subinfo">Enterprise </p>
+                                </div>
+                                <div class="heading-mar">
+                                    <p class="heading-info">Department</p>
+                                    <p class="heading-subinfo">Android Department</p>
+                                </div>
+                                <div class="heading-mar">
+                                    <p class="heading-info">Location </p>
+                                    <p class="heading-subinfo">Pune</p>
+                                </div>
+                                <div class="heading-mar">
+                                    <p class="heading-info">Experience from</p>
+                            
+                                    <div class="sub_headingContain">
+                                        <p class="container-info">4 Years</p>
+                                        <p class="container-info text-center">To</p>
+                                        <p class="container-info">6 Years</p>
+                                    </div>
+                                </div>
+                                <div class="heading-mar">
+                                    <p class="heading-info">Relevant experience </p>
+                                    <p class="heading-subinfo">5 Years</p>
+                                </div>
+                                <div class="heading-mar">
+                                    <p class="heading-info">No of openining</p>
+                                    <p class="heading-subinfo">2</p>
+                                </div>
+                                <div class="heading-mar">
+                                    <p class="heading-info">Mode of Employment</p>
+                                    <p class="heading-subinfo">Payroll</p>
+                                </div>
+                                <div class="heading-mar">
+                                    <p class="heading-info">CTC From</p>
+                                    <div class="sub_headingContain">
+                                        <p class="container-info">5.5</p>
+                                        <p class="container-info">To</p>
+                                        <p class="container-info">6.5</p>
+                                    </div>
+                                </div>
+                                <div class="heading-mar">
+                                    <p class="heading-info">Requirement</p>
+                                    <p class="heading-subinfo">On priority</p>
+                                </div>
+                                <div sclass="heading-mar">
+                                    <p class="heading-info">Is Assets Required ?</p>
+                                    <p class="heading-subinfo">Yes</p>
+                                </div>
+                                <div style="margin-top: 60px;text-align: right;">
+                                    <button class="secondary_small_btn mar-5">Cancel</button>
+                                    <button class="secondary_small_btn mar-5">Next</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSubSideNav() {
+            var subSideNav = document.querySelector('.sub-side-nav');
+            subSideNav.style.display = (subSideNav.style.display === 'none' || subSideNav.style.display === '') ? 'block' : 'none';
+        }
+
+
+        var menuIcon = document.getElementById('showicon');
+        var closeIcon = document.getElementById('closeicon');
+
+        menuIcon.addEventListener('click', function () {
+            menuIcon.style.display = 'none';
+            closeIcon.style.display = 'inline-block';
+
+        });
+
+        closeIcon.addEventListener('click', function () {
+            menuIcon.style.display = 'inline-block';
+            closeIcon.style.display = 'none';
+        });
+
+
+        document.getElementById('openmenu').addEventListener('click', function () {
+            var verticalNav = document.querySelector('.vertical-nav');
+            verticalNav.style.display = (verticalNav.style.display === 'none' || verticalNav.style.display === '') ? 'block' : 'none';
+        });
+
+
+        document.getElementById('serchboxshow').addEventListener('click', function () {
+            var searchBox = document.getElementById('serachBox');
+            searchBox.style.display = (searchBox.style.display === 'none' || searchBox.style.display === '') ? 'block' : 'none';
+            this.classList.toggle('btn-search-clicked');
+        });
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var dropdown = document.getElementById("myDropdown");
+            var button = document.querySelector(".btn-dropdown");
+
+            button.addEventListener("click", function () {
+                if (dropdown.style.display === "block") {
+                    dropdown.style.display = "none";
+                } else {
+                    dropdown.style.display = "block";
+                }
+            });
+
+            window.addEventListener("click", function (event) {
+                if (!event.target.matches('.btn-dropdown')) {
+                    dropdown.style.display = "none";
+                }
+            });
+        });
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('toggleButton');
+            var myDiv = document.getElementById('my_Div');
+
+            button.addEventListener('click', function () {
+                if (myDiv.style.display === 'none' || myDiv.style.display === '') {
+                    myDiv.style.display = 'block';
+                } else {
+                    myDiv.style.display = 'none';
+                }
+            });
+        });
+
+        //image change on click on button
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('toggleButton');
+            var myImage = document.getElementById('myImage');
+
+            button.addEventListener('click', function () {
+                // Change the image source when the button is clicked
+                if (myImage.src.endsWith('icon_module.png')) {
+                    myImage.src = 'asset/images/icon_blue.png';
+                } else {
+                    myImage.src = 'asset/images/icon_module.png';
+                }
+            });
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>

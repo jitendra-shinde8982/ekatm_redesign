@@ -1,0 +1,127 @@
+/******************************************************************************************************
+                                            Buttons Component
+*******************************************************************************************************/
+
+/* primary Button */
+
+.primary_big_btn{
+    border-radius: 6px;
+    background: #0063AF;
+    border: none;
+    padding: 13.5px 15px;
+    font-size: 18px;
+    color: #ffff;
+}
+
+.primary_medium_btn{
+    border-radius: 6px;
+    background: #0063AF;
+    border: none;
+    padding: 11.5px 15px;
+    font-size: 18px;
+    color: #ffff;
+}
+.primary_small_btn{
+    border-radius: 6px;
+    background: #0063AF;
+    border: none;
+    padding: 9.5px 15px;
+    font-size: 18px;
+    color: #ffff;
+}
+.primary_big_btn:hover{
+    box-shadow: 8px 12px 8px 0px rgba(0, 99, 169, 0.12);
+}
+.primary_medium_btn:hover{
+    box-shadow: 8px 12px 8px 0px rgba(0, 99, 169, 0.12);
+}
+.primary_small_btn:hover{
+    box-shadow: 8px 12px 8px 0px rgba(0, 99, 169, 0.12);
+}
+.primary_big_btn:focus{
+    background: #003A66;
+}
+.primary_medium_btn:focus{
+    background: #003A66;
+}
+.primary_small_btn:focus{
+    background: #003A66;
+}
+.primary_disabled_btn{
+    background: #D6D6D6 !important;
+}
+
+/* Secondary ( Outlined)  button */
+
+.secondary_big_btn {
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid #0063A9;
+    padding: 12.5px 15px;
+    font-size: 18px;
+    color: #0063a9;
+}
+.secondary_medium_btn {
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid #0063A9;
+    padding: 10.5px 15px;
+    font-size: 18px;
+    color: #0063a9;
+}
+.secondary_small_btn {
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid #0063A9;
+    padding: 8.5px 15px;
+    font-size: 18px;
+    color: #0063a9;
+}
+
+.secondary_big_btn:hover{
+    box-shadow: 8px 12px 8px 0px rgba(0, 99, 169, 0.12);
+}
+.secondary_medium_btn:hover{
+    box-shadow: 8px 12px 8px 0px rgba(0, 99, 169, 0.12);
+}
+.secondary_small_btn:hover{
+    box-shadow: 8px 12px 8px 0px rgba(0, 99, 169, 0.12);
+}
+.secondary_big_btn:focus{
+    background: #F2FAFF;
+}
+.secondary_medium_btn:focus{
+    background: #F2FAFF;
+}
+.secondary_small_btn:focus{
+    background: #F2FAFF;
+}
+.secondary_disabled_btn{
+    color: #D6D6D6 !important;
+    border: 1px solid #D6D6D6 !important;
+    background: #fff  !important;
+
+}
+
+.tertiary-label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 6px;
+    background: #fff;
+    font-size: 18px;
+    color: #0063a9;
+}
+.tertiary-label:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 6px; /* Adjust this value to control the space between text and underline */
+    width: 100%;
+    height: 1px; /* Adjust this value to control the underline thickness */
+    background-color: #0063a9; /* Adjust this value to set the underline color */
+}
+.tertiary-label:active {
+    color: #003A66; /* Text color when clicked */
+}
+

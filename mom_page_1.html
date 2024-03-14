@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/component.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="main-panel">
+            <div>
+                <div class="horizontal-nav pst-rel">
+                    <div class="logo">
+                        <img src="asset/images/ekatm_logo.png" alt="" class="logo-img">
+                        <div id="openmenu" style="display: none;">
+                            <span class="d-none-block" id="showicon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 31 23"
+                                    fill="none">
+                                    <path d="M2 21H29M2 11.5H29M2 2H29" stroke="#0063A9" stroke-width="3"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </span>
+                            <span class="d-none-block" id="closeicon" style="display: none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 26 23"
+                                    fill="none">
+                                    <path d="M2 21L24.5 2M2 2L24.5 21" stroke="#0063A9" stroke-width="3"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="width30per w-50per-resp mar-auto">
+                        <p class="Dashboard-Subheading d-none-resp">Hello, Gauri Welcome to <span>Ekatm</span></p>
+                    </div>
+                    <div class="width40per d-none-resp search_box">
+                        <div class="subdiv_search">
+                            <input type="text" placeholder="Search" class="input-search">
+                            <button class="btn_search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 22 22"
+                                    fill="none">
+                                    <path
+                                        d="M21.0498 22L12.6422 13.5925C11.9709 14.164 11.1988 14.6064 10.3261 14.9197C9.45329 15.233 8.57621 15.3897 7.69483 15.3897C5.54424 15.3897 3.72412 14.6453 2.23449 13.1564C0.744829 11.6676 0 9.84846 0 7.69904C0 5.54961 0.744415 3.72907 2.23325 2.23744C3.72208 0.745815 5.5412 0 7.69063 0C9.84008 0 11.6606 0.744819 13.1522 2.23446C14.6438 3.7241 15.3897 5.54422 15.3897 7.69484C15.3897 8.62785 15.2244 9.53074 14.8939 10.4035C14.5634 11.2763 14.1296 12.0225 13.5925 12.6423L22 21.0498L21.0498 22ZM7.69483 14.047C9.47653 14.047 10.9806 13.4337 12.2071 12.2072C13.4337 10.9806 14.0469 9.47652 14.0469 7.69484C14.0469 5.91316 13.4337 4.40905 12.2071 3.18252C10.9806 1.95599 9.47653 1.34272 7.69483 1.34272C5.91315 1.34272 4.40905 1.95599 3.18252 3.18252C1.95601 4.40905 1.34275 5.91316 1.34275 7.69484C1.34275 9.47652 1.95601 10.9806 3.18252 12.2072C4.40905 13.4337 5.91315 14.047 7.69483 14.047Z"
+                                        fill="white"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="width30per mar-t10px w-50per-resp">
+                        <button class="icon-right btn-module">
+                            <img src="asset/images/user_logo.png" alt="">
+                        </button>
+
+
+
+                        <button class="btn-module icon-right " id="toggleButton">
+                            <img src="asset/images/icon_module.png" id="myImage" alt="">
+                        </button>
+
+                        <button class="btn-module icon-right">
+                            <img src="asset/images/notification_icon.png" alt="">
+                        </button>
+
+
+
+                        <button id="serchboxshow" class="icon-right btn-search d-none-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16"
+                                fill="none">
+                                <path
+                                    d="M14.3752 15.4302L8.85042 9.90551C8.40926 10.2811 7.90192 10.5718 7.32841 10.7776C6.7549 10.9835 6.17856 11.0865 5.59938 11.0865C4.18619 11.0865 2.99016 10.5973 2.01129 9.61896C1.03241 8.64062 0.542969 7.44523 0.542969 6.03281C0.542969 4.62038 1.03214 3.42407 2.01048 2.4439C2.98881 1.46372 4.1842 0.973633 5.59663 0.973633C7.00907 0.973633 8.20537 1.46307 9.18553 2.44193C10.1657 3.4208 10.6558 4.61684 10.6558 6.03005C10.6558 6.64315 10.5472 7.23645 10.33 7.80997C10.1128 8.38348 9.82778 8.87385 9.47485 9.28109L14.9996 14.8058L14.3752 15.4302ZM5.59938 10.2041C6.77017 10.2041 7.75855 9.80115 8.56451 8.99517C9.37048 8.1892 9.77347 7.20082 9.77347 6.03005C9.77347 4.85927 9.37048 3.8709 8.56451 3.06492C7.75855 2.25895 6.77017 1.85596 5.59938 1.85596C4.42861 1.85596 3.44023 2.25895 2.63426 3.06492C1.8283 3.8709 1.42532 4.85927 1.42532 6.03005C1.42532 7.20082 1.8283 8.1892 2.63426 8.99517C3.44023 9.80115 4.42861 10.2041 5.59938 10.2041Z"
+                                    fill="white"></path>
+                            </svg>
+                        </button>
+
+
+                    </div>
+                    <div class="module_Box" id="my_Div" style="display: none;">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" viewBox="0 0 25 22"
+                                fill="none">
+                                <path d="M12.5 0L24.1913 21.75H0.808657L12.5 0Z" fill="#EBEBEB"></path>
+                            </svg>
+                        </span>
+                        <div class="module_subBox">
+
+                            <div class="module_containBox">
+                                <img src="asset/images/workbench.png" alt="">
+                                <p>Workbench</p>
+                            </div>
+                            <div class="module_containBox">
+                                <img src="asset/images/workbench.png" alt="">
+                                <p>Workbench</p>
+                            </div>
+                            <div class="module_containBox">
+                                <img src="asset/images/workbench.png" alt="">
+                                <p>Workbench</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="module_Box width300px" id="my_Div_2" style="
+        display: none;
+    ">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" viewBox="0 0 25 22"
+                                fill="none">
+                                <path d="M12.5 0L24.1913 21.75H0.808657L12.5 0Z" fill="#EBEBEB"></path>
+                            </svg>
+                        </span>
+                        <div class="module_subBox pst-rel padd-0">
+                            <div class="width100per">
+                                <img src="asset/images/profileBG.png" alt="" style="width: 100%;">
+                                <img src="asset/images/profile_pic.png" alt="" class="profileIconImage">
+                            </div>
+                            <div class="width100per mar-t20px">
+                                <h3 class="profileName">Jitendra Shinde</h3>
+                                <p class="profileDepartment">Enterprise product</p>
+                                <div>
+                                    <button class="btn-filters" style="display: flex;">
+                                        Manage account
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="mar-l5px" width="22" height="21"
+                                            viewBox="0 0 22 21" fill="none">
+                                            <rect x="0.5" width="21" height="21" fill="white"></rect>
+                                            <path d="M18.5 11H12.5V17H10.5V11H4.5V9H10.5V3H12.5V9H18.5V11Z"
+                                                fill="#0063A9">
+                                            </path>
+                                        </svg>
+
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="serchbox-resp d-none-block" id="serachBox" style="display: none;">
+
+
+                    <div class="width100per">
+                        <input type="text" placeholder="Search" class="input-search mar-0">
+                    </div>
+
+                </div>
+            </div>
+            <div class="hori_submenu pst-rel padd_b8">
+                <div class="Module_menu pst-rel">
+                    <button class="btn-filters padd-3_6px mar_r15">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8 7.69231H13.0769C13.3231 7.69231 13.5385 7.47692 13.5385 7.23077V6.30769C13.5385 6.06154 13.3231 5.84615 13.0769 5.84615H8C7.81538 5.84615 7.69231 5.72308 7.69231 5.53846V0.461538C7.69231 0.215385 7.47692 0 7.23077 0H6.30769C6.06154 0 5.84615 0.215385 5.84615 0.461538V5.53846C5.84615 5.72308 5.72308 5.84615 5.53846 5.84615H0.461538C0.215385 5.84615 0 6.06154 0 6.30769V7.23077C0 7.47692 0.215385 7.69231 0.461538 7.69231H5.53846C5.72308 7.69231 5.84615 7.81538 5.84615 8V13.0769C5.84615 13.3231 6.06154 13.5385 6.30769 13.5385H7.23077C7.47692 13.5385 7.69231 13.3231 7.69231 13.0769V8C7.69231 7.81538 7.81538 7.69231 8 7.69231Z"
+                                fill="#0063A9"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" width="16" height="10"
+                            viewBox="0 0 16 2" fill="none">
+                            <rect width="16" height="2" rx="1" fill="#0063A9"></rect>
+                        </svg>
+                    </button>
+                    <span class="module_MainLable">Workbench</span>
+                    <span class="polygon_menu_icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                            <path d="M6.5 -1.31134e-06L12.9952 11.25L0.00481135 11.25L6.5 -1.31134e-06Z" fill="#1589EE">
+                            </path>
+                        </svg>
+                    </span>
+                </div>
+                <div class="cust_hori_scroll module_submenu">
+                    <div class="sub_label box-brd">
+
+                        <span class="name_menu ">Management</span>
+                        <span class="mar-t4r6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.6456 5.47668L8.33792 11.8459C8.1533 12.0305 7.84561 12.0305 7.661 11.8459L1.35331 5.47668C1.16869 5.29207 1.16869 4.98438 1.35331 4.79976L2.03023 4.12284C2.21484 3.93822 2.52254 3.93822 2.70715 4.12284L7.661 9.13822C7.84561 9.32284 8.1533 9.32284 8.33792 9.13822L13.2918 4.15361C13.4764 3.96899 13.7841 3.96899 13.9687 4.15361L14.6456 4.83053C14.7995 5.01514 14.7995 5.29207 14.6456 5.47668Z"
+                                    fill="#747474"></path>
+                            </svg>
+                        </span>
+                        <div class="hori_dropdown" style="display: none;">
+                            <ul class="mar_padd-0">
+                                <li class="hori_dropdown_li">
+                                    <span class="dropdown_liHeading">Performance Report </span>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 11 12" fill="none">
+                                            <path
+                                                d="M8.15472 7.60439C7.82348 7.60439 7.55496 7.32943 7.55496 6.99026V3.41414C7.55496 2.20886 6.59732 1.22826 5.42021 1.22826C4.24313 1.22826 3.28547 2.20884 3.28547 3.41414V5.49409C3.28547 5.83326 3.01694 6.10822 2.6857 6.10822C2.35446 6.10822 2.08594 5.83326 2.08594 5.49409V3.41414C2.08594 1.53157 3.58168 0 5.42021 0C7.25875 0 8.75449 1.53157 8.75449 3.41414V6.99026C8.75449 7.32943 8.48596 7.60439 8.15472 7.60439Z"
+                                                fill="#B1B4B5"></path>
+                                            <path
+                                                d="M9.06939 11.3239H1.77091C1.0895 11.3239 0.537109 10.7583 0.537109 10.0606V5.73992C0.537109 5.04219 1.0895 4.47656 1.77091 4.47656H9.06939C9.7508 4.47656 10.3032 5.04219 10.3032 5.73992V10.0606C10.3032 10.7583 9.7508 11.3239 9.06939 11.3239Z"
+                                                fill="#FFB636"></path>
+                                        </svg>
+                                    </span>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hori_submenu pst-rel padd_b8">
+                <span class="workNav_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
+                        <path d="M6.5 12L0.00480941 0.75L12.9952 0.750001L6.5 12Z" fill="#1589EE"></path>
+                    </svg>
+                </span>
+                <div class="cust_hori_scroll work_nav">
+                    <div class="sub_label ">
+
+                        <span class="name_menu ">Work status</span>
+                        <span class="mar-t4r6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.6456 5.47668L8.33792 11.8459C8.1533 12.0305 7.84561 12.0305 7.661 11.8459L1.35331 5.47668C1.16869 5.29207 1.16869 4.98438 1.35331 4.79976L2.03023 4.12284C2.21484 3.93822 2.52254 3.93822 2.70715 4.12284L7.661 9.13822C7.84561 9.32284 8.1533 9.32284 8.33792 9.13822L13.2918 4.15361C13.4764 3.96899 13.7841 3.96899 13.9687 4.15361L14.6456 4.83053C14.7995 5.01514 14.7995 5.29207 14.6456 5.47668Z"
+                                    fill="#747474"></path>
+                            </svg>
+                        </span>
+                        <div class="hori_dropdown width250px" style="display: none;">
+                            <ul class="mar_padd-0">
+                                <li class="hori_dropdown_li">
+                                    <span class="dropdown_liHeading">Work Status</span>
+                                    <span class="work_Num">03</span>
+                                </li>
+
+                                <li class="hori_dropdown_li">
+                                    <span class="dropdown_liHeading">Today</span>
+                                    <span class="work_Num">01</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-cards">
+
+                <div class="panel-sub-cards pst-rel">
+                    <div style="
+                    display: flex;
+                ">
+                                        <div style="
+                    width: 75%;
+                    padding: 18px;
+                    display: flex;
+                ">
+                                             <div style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+                    border: 1px solid var(--Disable-text, #D9D9D9);
+                    background: #FFF;
+                    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.09);
+                    width: 170px;
+                    text-align: center;
+                    padding: 24px 0;
+                    margin: 10px 18px;
+                    height: 160px;
+                ">
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="61" height="56" viewBox="0 0 61 56" fill="none">
+                                                    <path d="M49.5385 5.38281H6.46154C2.89293 5.38281 0 8.27574 0 11.8444V45.229C0 48.7976 2.89293 51.6905 6.46154 51.6905H49.5385C53.1071 51.6905 56 48.7976 56 45.229V11.8444C56 8.27574 53.1071 5.38281 49.5385 5.38281Z" fill="#EDEDED"></path>
+                                                    <path d="M49.5385 5.38281H6.46154C4.74783 5.38281 3.10431 6.06358 1.89254 7.27535C0.680768 8.48713 0 10.1306 0 11.8444V18.3059H56V11.8444C56 10.1306 55.3192 8.48713 54.1075 7.27535C52.8957 6.06358 51.2522 5.38281 49.5385 5.38281Z" fill="#0063A9"></path>
+                                                    <path d="M18.3072 3.23077C18.3072 1.44646 16.8608 0 15.0765 0C13.2922 0 11.8457 1.44646 11.8457 3.23077V9.69231C11.8457 11.4766 13.2922 12.9231 15.0765 12.9231C16.8608 12.9231 18.3072 11.4766 18.3072 9.69231V3.23077Z" fill="#EDEDED"></path>
+                                                    <path d="M44.1539 3.23077C44.1539 1.44646 42.7075 0 40.9232 0C39.1388 0 37.6924 1.44646 37.6924 3.23077V9.69231C37.6924 11.4766 39.1388 12.9231 40.9232 12.9231C42.7075 12.9231 44.1539 11.4766 44.1539 9.69231V3.23077Z" fill="#EDEDED"></path>
+                                                    <path d="M18.3076 24.7734H25.8461V32.3119H18.3076V24.7734Z" fill="#A4A4AC"></path>
+                                                    <path d="M30.1543 24.7734H37.6928V32.3119H30.1543V24.7734Z" fill="#A4A4AC"></path>
+                                                    <path d="M42 24.7734H49.5385V32.3119H42V24.7734Z" fill="#A4A4AC"></path>
+                                                    <path d="M30.1543 36.6172H37.6928V44.1556H30.1543V36.6172Z" fill="#A4A4AC"></path>
+                                                    <path d="M6.46191 36.6172H14.0004V44.1556H6.46191V36.6172Z" fill="#A4A4AC"></path>
+                                                    <path d="M18.3076 36.6172H25.8461V44.1556H18.3076V36.6172Z" fill="#A4A4AC"></path>
+                                                    <path d="M50.6161 56.0018C55.969 56.0018 60.3084 51.6624 60.3084 46.3095C60.3084 40.9566 55.969 36.6172 50.6161 36.6172C45.2632 36.6172 40.9238 40.9566 40.9238 46.3095C40.9238 51.6624 45.2632 56.0018 50.6161 56.0018Z" fill="#0063A9"></path>
+                                                    <path d="M56.0007 45.2296H51.693V40.9219H49.5391V45.2296H45.2314V47.3834H49.5391V51.6911H51.693V47.3834H56.0007V45.2296Z" fill="white"></path>
+                                                    </svg></span>
+                                                    <h4 style="
+                    font-size: 16px;
+                    font-weight: 500;
+                ">Plan a meeting</h4>
+                                             </div>
+                                        <div style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+                    border: 1px solid var(--Disable-text, #D9D9D9);
+                    background: #FFF;
+                    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.09);
+                    width: 170px;
+                    text-align: center;
+                    padding: 24px 0;
+                    margin: 10px 18px;
+                    height: 160px;
+                ">
+                                                <span><svg xmlns="http://www.w3.org/2000/svg" width="61" height="56" viewBox="0 0 35 43" fill="none">
+                <path d="M29.9899 9.69305V4.27344H4.28418V9.69305C4.28422 11.5281 4.75572 13.3323 5.65347 14.9328C6.55121 16.5332 7.8451 17.8762 9.41104 18.8329L12.6314 20.8036C12.7347 20.8677 12.82 20.957 12.8791 21.0632C12.9383 21.1694 12.9693 21.289 12.9693 21.4106C12.9693 21.5321 12.9383 21.6517 12.8791 21.7579C12.82 21.8641 12.7347 21.9535 12.6314 22.0175L9.41104 23.9883C7.8451 24.9449 6.55121 26.2879 5.65347 27.8883C4.75572 29.4888 4.28422 31.293 4.28418 33.1281V38.5477H29.9899V33.1281C29.9898 31.293 29.5183 29.4888 28.6206 27.8883C27.7228 26.2879 26.4289 24.9449 24.863 23.9883L21.6427 22.0175C21.5393 21.9535 21.4541 21.8641 21.3949 21.7579C21.3358 21.6517 21.3048 21.5321 21.3048 21.4106C21.3048 21.289 21.3358 21.1694 21.3949 21.0632C21.4541 20.957 21.5393 20.8677 21.6427 20.8036L24.863 18.8329C26.4289 17.8762 27.7228 16.5332 28.6206 14.9328C29.5183 13.3323 29.9898 11.5281 29.9899 9.69305Z" fill="#EDEDED"></path>
+                <path d="M5.71191 38.556L17.1367 25.7031L28.4829 38.556H5.71191Z" fill="#A4A4AC"></path>
+                <path d="M0 0L34.2743 0V5.71238H0L0 0Z" fill="#0063A9"></path>
+                <path d="M34.2744 42.8438H0.000164032V37.1314H34.2744V42.8438Z" fill="#0063A9"></path>
+                </svg></span>
+                                                    <h4 style="
+                    font-size: 16px;
+                    font-weight: 500;
+                ">View earlier meetings</h4>
+                                             </div></div>
+                                        <div style="width: 25%;box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0);">
+    <h4 style="
+    text-align: center;
+    background: #F7F7F7;
+    margin: 0;
+    padding: 10px 14px;
+    color: #242424;
+    font-weight: 500;
+    margin: 10px 0;
+">Upcoming meetings</h4>
+                
+                                        <div>
+<div style="
+    display: flex;
+    align-items: center;
+    background: #F0F0F0;
+    padding: 8px 18px;
+">
+    <span>
+   <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+<path d="M8.96153 6.97031H8.97403V6.95781V5.0125H9.89133V6.95781V6.97031H9.90383H16.1635H16.176V6.95781V5.0125H17.026V6.95781V6.97031H17.0385H18.5865C18.9861 6.97031 19.3192 7.10443 19.5865 7.37254C19.8538 7.64066 19.9875 7.97469 19.9875 8.37552V19.5823C19.9875 19.9831 19.8538 20.3172 19.5865 20.5853C19.3192 20.8534 18.9861 20.9875 18.5865 20.9875H7.41345C7.01386 20.9875 6.68085 20.8534 6.41354 20.5853C6.14623 20.3172 6.0125 19.9831 6.0125 19.5823V8.37552C6.0125 7.97469 6.14623 7.64066 6.41354 7.37254C6.68085 7.10443 7.01386 6.97031 7.41345 6.97031H8.96153ZM19.1375 11.8861V11.8736H19.125H6.875H6.8625V11.8861V19.5823C6.8625 19.7212 6.92034 19.848 7.03441 19.9624C7.14849 20.0768 7.27493 20.1349 7.41345 20.1349H18.5865C18.7251 20.1349 18.8515 20.0768 18.9656 19.9624C19.0797 19.848 19.1375 19.7212 19.1375 19.5823V11.8861ZM6.8625 11.0084V11.0209H6.875H19.125H19.1375V11.0084V8.37552C19.1375 8.23662 19.0797 8.10982 18.9656 7.99539C18.8515 7.88098 18.7251 7.82295 18.5865 7.82295H7.41345C7.27493 7.82295 7.14849 7.88098 7.03441 7.99539C6.92034 8.10982 6.8625 8.23662 6.8625 8.37552V11.0084ZM13 14.9791C12.8229 14.9791 12.6687 14.9133 12.5369 14.781C12.405 14.6488 12.3394 14.4941 12.3394 14.3165C12.3394 14.1388 12.405 13.9841 12.5369 13.8519C12.6687 13.7196 12.8229 13.6538 13 13.6538C13.1771 13.6538 13.3313 13.7196 13.4631 13.8519C13.595 13.9841 13.6606 14.1388 13.6606 14.3165C13.6606 14.4941 13.595 14.6488 13.4631 14.781C13.3313 14.9133 13.1771 14.9791 13 14.9791ZM9.5 14.9791C9.32289 14.9791 9.16869 14.9133 9.03686 14.781C8.90502 14.6488 8.83943 14.4941 8.83943 14.3165C8.83943 14.1388 8.90502 13.9841 9.03685 13.8519C9.16869 13.7196 9.32289 13.6538 9.5 13.6538C9.67711 13.6538 9.83131 13.7196 9.96314 13.8519C10.095 13.9841 10.1606 14.1388 10.1606 14.3165C10.1606 14.4941 10.095 14.6488 9.96314 14.781C9.83131 14.9133 9.67711 14.9791 9.5 14.9791ZM16.5 14.9791C16.3229 14.9791 16.1687 14.9133 16.0369 14.781C15.905 14.6488 15.8394 14.4941 15.8394 14.3165C15.8394 14.1388 15.905 13.9841 16.0369 13.8519C16.1687 13.7196 16.3229 13.6538 16.5 13.6538C16.6771 13.6538 16.8313 13.7196 16.9631 13.8519C17.095 13.9841 17.1606 14.1388 17.1606 14.3165C17.1606 14.4941 17.095 14.6488 16.9631 14.781C16.8313 14.9133 16.6771 14.9791 16.5 14.9791ZM13 18.3546C12.8229 18.3546 12.6687 18.2888 12.5369 18.1566C12.405 18.0243 12.3394 17.8697 12.3394 17.692C12.3394 17.5143 12.405 17.3596 12.5369 17.2274C12.6687 17.0951 12.8229 17.0294 13 17.0294C13.1771 17.0294 13.3313 17.0951 13.4631 17.2274C13.595 17.3596 13.6606 17.5143 13.6606 17.692C13.6606 17.8697 13.595 18.0243 13.4631 18.1566C13.3313 18.2888 13.1771 18.3546 13 18.3546ZM9.5 18.3546C9.32289 18.3546 9.16869 18.2888 9.03686 18.1566C8.90502 18.0243 8.83943 17.8697 8.83943 17.692C8.83943 17.5143 8.90502 17.3596 9.03685 17.2274C9.16869 17.0951 9.32289 17.0294 9.5 17.0294C9.67711 17.0294 9.83131 17.0951 9.96314 17.2274C10.095 17.3596 10.1606 17.5143 10.1606 17.692C10.1606 17.8697 10.095 18.0243 9.96314 18.1566C9.83131 18.2888 9.67711 18.3546 9.5 18.3546ZM16.5 18.3546C16.3229 18.3546 16.1687 18.2888 16.0369 18.1566C15.905 18.0243 15.8394 17.8697 15.8394 17.692C15.8394 17.5143 15.905 17.3596 16.0369 17.2274C16.1687 17.0951 16.3229 17.0294 16.5 17.0294C16.6771 17.0294 16.8313 17.0951 16.9631 17.2274C17.095 17.3596 17.1606 17.5143 17.1606 17.692C17.1606 17.8697 17.095 18.0243 16.9631 18.1566C16.8313 18.2888 16.6771 18.3546 16.5 18.3546Z" fill="#0063A9" stroke="#0063A9" stroke-width="0.025"></path>
+<circle cx="13.5" cy="13.5" r="13" stroke="#0063A9" stroke-dasharray="2 2"></circle>
+</svg>     
+    </span>
+<label style="
+    color: #242424;
+    font-size: 16px;
+    margin: 0 10px;
+">
+    18 February Monday, 2024     
+    </label></div>
+    
+    
+<div style="
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #EEF8FF;
+    padding: 35px;
+">
+    <div style="
+    width: 10%;
+    text-align: center;
+">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 14 16" fill="none">
+<path d="M-3.93402e-07 8L13.5 0.205772L13.5 15.7942L-3.93402e-07 8Z" fill="#0063A9"></path>
+</svg>
+    </div>
+<div style="width: 20%;text-align: center;">
+        <h3 style="
+    margin: 0;
+    background: #ffff;
+    padding: 12px 8px;
+    border-radius: 9px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.09);
+    color: #0063A9;
+    font-size: 26px;
+">18</h3>
+<p style="
+    margin: 0;
+    margin-top: 15px;
+    color: #242424;
+    font-size: 16px;
+">Monday</p>
+    </div><div style="
+    width: 10%;
+    text-align: center;
+">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 14 16" fill="none">
+<path d="M14 8L0.499999 15.7942L0.5 0.205771L14 8Z" fill="#0063A9"></path>
+</svg>
+    </div></div><div style="
+    background: #EEF8FF;
+    margin: 12px;
+    padding: 14px;
+    border-radius: 8px;
+">
+    <p style="
+    margin: 0;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    color: #242424;
+">Subject Name ( Ekatm meta discussion meeting) </p>
+    <div style="
+    margin: 10px 0;
+    font-size: 16px;
+    color: #242424;
+    letter-spacing: 0.5px;
+">
+      <span style="
+    margin-right: 10px;
+"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 15 15" fill="none">
+<path d="M7.5 1C3.91146 1 1 3.91146 1 7.5C1 11.0885 3.91146 14 7.5 14C11.0885 14 14 11.0885 14 7.5C14 3.91146 11.0885 1 7.5 1Z" stroke="#929292" stroke-miterlimit="10"></path>
+<path d="M7.5 3.16406V8.03906H10.75" stroke="#929292" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg></span><span>04:00 PM</span>to<span> 05:10 PM</span>    
+    <div>
+</div></div><div style="
+    display: flex;
+    align-items: center;
+">
+    <div style="
+    width: 28%;
+">
+    <label>Attendee</label>
+</div>
+
+    <div style="
+    position: relative;
+    display: flex;
+    align-items: center;
+">
+  <span style="
+    background: #EFA04B;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    color: #242424;
+    font-size: 16px;
+    border: 3px solid #ffff;
+    text-align: center;
+    position: absolute;
+    left: 0;
+">p</span>
+     <span style="
+    background: #AAC9F8;
+    text-align: center;
+    border-radius: 50%;
+    color: #242424;
+    height: 24px;
+    width: 24px;
+    font-size: 16px;
+    border: 3px solid #ffff;
+    position: absolute;
+    left: 22px;
+">v</span>
+<span style="
+    background: #4CB7D8;
+    width: 24px;
+    text-align: center;
+    height: 24px;
+    border-radius: 50%;
+    color: #242424;
+    font-size: 16px;
+    border: 3px solid #ffff;
+    position: absolute;
+    left: 44px;
+">j</span><span style="
+    background: #C0C2F2;
+    border-radius: 50%;
+    color: #242424;
+    font-size: 16px;
+    border: 3px solid #ffff;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    position: absolute;
+    left: 64px;
+">s</span></div>
+</div><div style="
+    text-align: right;
+    padding: 10px;
+">
+    <button style="
+    padding: 4px 16px;
+    background: #C91818;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    color: #ffff;
+    font-size: 16px;
+">High</button>
+</div></div></div></div>
+                                   </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        function toggleSubSideNav() {
+            var subSideNav = document.querySelector('.sub-side-nav');
+            subSideNav.style.display = (subSideNav.style.display === 'none' || subSideNav.style.display === '') ? 'block' : 'none';
+        }
+
+
+        var menuIcon = document.getElementById('showicon');
+        var closeIcon = document.getElementById('closeicon');
+
+        menuIcon.addEventListener('click', function () {
+            menuIcon.style.display = 'none';
+            closeIcon.style.display = 'inline-block';
+
+        });
+
+        closeIcon.addEventListener('click', function () {
+            menuIcon.style.display = 'inline-block';
+            closeIcon.style.display = 'none';
+        });
+
+
+        document.getElementById('openmenu').addEventListener('click', function () {
+            var verticalNav = document.querySelector('.vertical-nav');
+            verticalNav.style.display = (verticalNav.style.display === 'none' || verticalNav.style.display === '') ? 'block' : 'none';
+        });
+
+
+        document.getElementById('serchboxshow').addEventListener('click', function () {
+            var searchBox = document.getElementById('serachBox');
+            searchBox.style.display = (searchBox.style.display === 'none' || searchBox.style.display === '') ? 'block' : 'none';
+            this.classList.toggle('btn-search-clicked');
+        });
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var dropdown = document.getElementById("myDropdown");
+            var button = document.querySelector(".btn-dropdown");
+
+            button.addEventListener("click", function () {
+                if (dropdown.style.display === "block") {
+                    dropdown.style.display = "none";
+                } else {
+                    dropdown.style.display = "block";
+                }
+            });
+
+            window.addEventListener("click", function (event) {
+                if (!event.target.matches('.btn-dropdown')) {
+                    dropdown.style.display = "none";
+                }
+            });
+        });
+
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('toggleButton');
+            var myDiv = document.getElementById('my_Div');
+
+            button.addEventListener('click', function () {
+                if (myDiv.style.display === 'none' || myDiv.style.display === '') {
+                    myDiv.style.display = 'block';
+                } else {
+                    myDiv.style.display = 'none';
+                }
+            });
+        });
+
+        //image change on click on button
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.getElementById('toggleButton');
+            var myImage = document.getElementById('myImage');
+
+            button.addEventListener('click', function () {
+                // Change the image source when the button is clicked
+                if (myImage.src.endsWith('icon_module.png')) {
+                    myImage.src = 'asset/images/icon_blue.png';
+                } else {
+                    myImage.src = 'asset/images/icon_module.png';
+                }
+            });
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>
