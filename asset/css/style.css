@@ -126,7 +126,12 @@ body {
 .width40per {
     width: 40% !important;
 }
-
+.width60per {
+    width: 60% !important;
+}
+.width50per {
+    width: 50% !important;
+}
 .width100per {
     width: 100% !important;
 }
@@ -1875,9 +1880,7 @@ body {
 .display_flex{
     display: flex;
 }
-.width40per{
-    width: 40% !important;
-}
+
 .main_popupheading{
     display: flex;
     width: 100%;
@@ -2051,14 +2054,14 @@ body {
 .custMainPopup {
     width: 100%;
     background: #3d3c3cb8;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 9999999;
-    height: -webkit-fill-available;
+    height: 100%;
 }
 .custMainPopup .custMainPopupBody{
     background: #ffff;
-    margin: 35px auto;
+    margin: 100px auto;
     border-radius: 8px;
 }
 .custMainPopup .custMainPopupBody .custMainPopup-heading {
@@ -2430,6 +2433,21 @@ body {
     font-size: 16px;
     border: 3px solid #ffff;
     text-align: center;
+}
+.clickedIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D9D9D9;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    color: #242424;
+    font-size: 16px;
+    border: 3px solid #fff;
+}
+.bg-gray{
+    background: #D9D9D9;
 }
 .bg-org{
     background: #efa04b;
@@ -3077,16 +3095,187 @@ align-items: normal;
     background: #2e844a;
     border-radius: 50%;
 }
+.noneBlock{
+    display: none;
+}
+.disBlockNone{
+    display: block;
+}
+/* meeting Invite */
+
+.searchBoxDiv{
+    padding: 15px;
+}
+.searchBoxDiv .meetingSearch{
+    display: flex;
+    height: 35px;
+    width: 35%;
+    border-radius: 10px;
+    border: 1px solid #D9D9D9;
+}
+.searchBoxDiv .meetingSearch .AllFIlterbtn {
+    display: flex;
+    align-items: center;
+    background: #929292;
+    border-radius: 5px 0 0 5px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.searchBoxDiv .meetingSearch .AllFIlterbtn svg{
+    margin-left: 5px;
+}
+.searchBoxDiv .meetingSearch input {
+    outline: none;
+    background: #FFF;
+    padding: 8px;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+.searchBoxDiv .meetingSearch .btnsearchicon{
+    border: none;
+    background: #0063AE;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    padding: 0 10px;
+}
+.momInviteCard {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.momInviteCard .momInviteCardBody{
+    width: 32%;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    margin: 5px;
+}
+.momInviteCard .momInviteCardBody .momBtnHeading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.momInviteCard .momInviteCardBody .momBtnHeading .dateTime{
+    text-align: center;
+}
+.momInviteCard .momInviteCardBody .momBtnHeading .dateTime h4 {
+    margin: 0;
+    color: #fff;
+    background: #0063ae;
+    padding: 4px 8px;
+    font-family: 'roboto-400';
+    font-weight: 400;
+    border-radius: 4px 4px 0 0;
+}
+.momInviteCard .momInviteCardBody .momBtnHeading .dateTime p {
+    margin: 0;
+    color: #242424;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-top: none;
+    padding: 2px 8px;
+    border-radius: 0 0 4px 4px;
+}
+.btnUpcomingDate{
+    background: #EFA04B;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    border-radius: 36px;
+    color: #fff;
+    font-size: 14px;
+}
+.momInviteCard .momInviteCardBody .momBtnpara{
+    margin: 20px 10px;
+}
+.momInviteCard .momInviteCardBody .momBtnpara p{
+    margin: 10px 0;
+    font-size: 16px;
+    color: #242424;
+}
+.momInviteCard .momInviteCardBody .momParticipants {
+    display: flex;
+    align-items: center;
+    margin: 40px 10px 20px 10px;
+}
+.momInviteCard .momInviteCardBody .momParticipants .labelparticipants{
+   width: 20%;
+   color: #242424;
+   font-size: 16px;
+}
+.momInviteCard .momInviteCardBody .momParticipants .attendee{
+    position: relative;
+    display: flex;
+    align-items: center;
+ }
+ .momInviteCard .momInviteCardBody .momActionBtns{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border-top: 1px solid #D9D9D9;
+ }
+ .momInviteCard .momInviteCardBody .momActionBtns .open {
+     border: 1px solid #C91818;
+     padding: 8px 12px;
+     border-radius: 4px;
+     font-size: 16px;
+     color: #242424;
+ }
+ .momInviteCard .momInviteCardBody .momActionBtns .open span{
+    color:#C91818;
+ }
+ .momInviteCard .momInviteCardBody .momActionBtns .action {
+    border: 1px solid #2E844A;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #242424;
+}
+.momInviteCard .momInviteCardBody .momActionBtns .action span{
+ 
+    color:#2E844A
+}
+.momInviteCard .momInviteCardBody .momActionBtns .msgIcon {
+    border: 1px solid #0063A9;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background: #fff;
+}
+.dropdownMeetingSearch{
+    position: absolute;
+    top: 108px;
+    z-index: 9999;
+    background: #ffff;
+    width: 253px;
+    box-shadow: 8px 4px 10px 0px rgba(0, 99, 174, 0.10);
+}
+.dropdownMeetingSearch ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid #0063A9;
+}
+.dropdownMeetingSearch ul li{
+    border-bottom: 1px solid #B3D7F3;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #242424;
+}
+.scheduledLabel {
+    font-size: 20px;
+    color: #242424;
+    font-family: 'roboto-500';
+    font-weight: 500;
+}
 /*************************************************************************************************
                             Media Queries
 **************************************************************************************************/
 @media only screen and (max-width: 600px) {
-
- 
-    .width40per{
-        width: 100% !important;
-    }
-
     .d-none-resp {
         display: none;
     }
@@ -3393,38 +3582,114 @@ align-items: normal;
        padding: 5px 0;
    }
    .addVenueandAttendee {
+       width: 100%;
+   }
+
+   .addVenueandAttendee .venueDetailsBox .mapDiv iframe {
+       height: 340px;
+       width: 100%;
+   }
+
+   .attendeeEmpField {
+       display: inline;
+       align-items: center;
+       margin: 10px 5px;
+   }
+
+   .attendeeEmpField .labelField {
+       width: 100%;
+       margin: 5px 0;
+   }
+
+   .attendeeEmpField .inputField {
+       width: 100%;
+       padding: 5px 0;
+   }
+
+   .attendeeEmpField .checkDIV {
+       width: 100%;
+       padding: 5px 0;
+   }
+
+   .width80padd10 {
+       width: 100%;
+       padding: 5px 0;
+   }
+
+   .momAttendee {
+       margin: 10px 5px;
+   }
+
+   .momAgenda {
+       border-radius: 6px;
+       margin: 10px 5px;
+   }
+   .respTablePopup{
+    background-color: rgb(0 0 0 / 39%);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
     width: 100%;
-}
-.addVenueandAttendee .venueDetailsBox .mapDiv iframe {
-    height: 340px;
-    width: 100%;
-}
-.attendeeEmpField {
-    display: inline;
+    height: 100%;
+    z-index: 999;
+   }
+   .respTablePopup  .tablePopupBody{
+    background: #fff;
+    margin: 20px 10px;
+   }
+   .tablePopupHeading{
+    background: #F5F5F5;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
     align-items: center;
-    margin: 10px 5px;
-}
-.attendeeEmpField .labelField {
-    width: 100%;
-    margin: 5px 0;
-}
-.attendeeEmpField .inputField {
-    width: 100%;
-    padding: 5px 0;
-}
-.attendeeEmpField .checkDIV {
-    width: 100%;
-    padding: 5px 0;
-}
-.width80padd10 {
-    width: 100%;
-    padding: 5px 0;
-}
-.momAttendee {
-    margin: 10px 5px;
-}
-.momAgenda {
-    border-radius: 6px;
-    margin: 10px 5px;
-}
+   }
+   .tablePopupHeading .popuplabel{
+      font-size: 18px;
+      color: #242424;
+      font-family: 'roboto-500';
+   }
+   .noneBlock{
+    display: block;
+   }
+   .disBlockNone{
+    display: none;
+   }
+   .searchBoxDiv .meetingSearch {
+       width: 100%;
+   }
+   .momInviteCard {
+       display: inline-flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+   .momInviteCard .momInviteCardBody {
+       width: 100%;
+   }
+   .width30per {
+       width: 100% !important;
+       padding: 5px 0;
+   }
+
+   .width70per {
+       width: 100% !important;
+       padding: 5px 0;
+   }
+
+   .width40per {
+       width: 100% !important;
+       padding: 5px 0;
+   }
+   .width60per {
+       width: 100% !important;
+       padding: 5px 0;
+   }
+   .width50per {
+       width: 100% !important;
+   }
+   .popUpFormField {
+       display: inline;
+   }
 }
