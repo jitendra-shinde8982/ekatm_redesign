@@ -194,7 +194,7 @@ body {
 
 .Dashboard-Subheading {
     color: rgba(50, 49, 49, 0.91);
-    font-family: Poppins;
+    font-family: 'roboto-400';
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -2310,6 +2310,9 @@ body {
     margin: 10px 18px;
     height: 160px;
 }
+.divHideShow{
+    display: none !important;
+   }
 .mom_container .meetingsCardBox .momplanCard h4{
   color: #242424;
   font-size: 16px;
@@ -2799,6 +2802,281 @@ align-items: normal;
 .btnFooter button svg{
     padding-left: 8px;
 }
+.momAgenda {
+    border-radius: 6px;
+    margin: 10px;
+}
+.momAgenda .typeBox{
+    border: 1px solid #D9D9D9;
+    background: #FBFBFB;
+    border-radius: 8px;
+}
+.momAgenda .typeBox textarea{
+    border: 1px solid #D9D9D9;
+    border-bottom: none;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 6px;
+    font-family: 'roboto-400';
+}
+.momAgenda .typeBox .alignBtnDIv{
+    padding-bottom: 8px;
+    margin-top: 10px;
+}
+.momAgenda .typeBox .alignBtnDIv .btnAlignfirst{
+    border: 1px solid #d9d9d9;
+    padding: 6px;
+    border-radius: 4px 0px 0px 4px;
+    background: #ffff;
+}
+.momAgenda .typeBox .alignBtnDIv .btnAlignsecond{
+    border: 1px solid #d9d9d9;
+    padding: 6px;
+    background: #ffff;
+}
+.momAgenda .typeBox .alignBtnDIv .btnAlignthird{
+    border: 1px solid #d9d9d9;
+    padding: 6px;
+    background: #ffff;
+}
+.momAgenda .typeBox .alignBtnDIv .btnAlignforth{
+    border: 1px solid #d9d9d9;
+    padding: 6px;
+    border-radius: 0px 4px 4px 0;
+    background: #ffff;
+}
+.momAgenda .typeBox .alignBtnDIv .btnattchment {
+    border: 1px solid #d9d9d9;
+    margin: 5px;
+    background: #ffff;
+    padding: 6px 8px;
+    border-radius: 4px;
+    position: relative;
+}
+.momAgenda .typeBox .alignBtnDIv .btnattchment label{
+    border-radius: 50px;
+    background: #000;
+    color: #fff;
+    padding: 3px 4px;
+    font-size: 10px;
+    position: absolute;
+    top: -8px;
+}
+.momAgenda .typeBox .alignBtnDIv .btnGenrateAI {
+    margin: 0 13px;
+    background: #fff;
+    padding: 4px 10px;
+    border: 1px solid #FEA500;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #242424;
+}
+.momAgenda .typeBox .alignBtnDIv .btnGenrateAI svg{
+   margin-left: 6px;
+}
+.addVenueandAttendee{
+    width: 25%;
+}
+.addVenueandAttendee .venueDetailsBox{
+    border: 1px solid #D9D9D9;
+    margin: 10px 5px;
+    border-radius: 6px;
+}
+.addVenueandAttendee .venueDetailsBox h3{
+    text-align: center;
+    font-size: 18px;
+    color: #242424;
+    font-family: 'roboto-500';
+    font-weight: 500;
+}
+.addVenueandAttendee .venueDetailsBox .imgDiv{
+    text-align: center;
+    margin: 50px 0;
+    height: 345px;
+}
+.addVenueandAttendee .venueDetailsBox .mapDiv{
+    text-align: center;
+    margin: 50px 0;
+    height: 345px;
+    overflow: auto;
+    padding: 10px;
+    background: #DFF2FF;
+    margin: 5px;
+    border-radius: 8px;
+}
+.addVenueandAttendee .venueDetailsBox .mapDiv iframe{
+   height: 340px;
+   width:290px
+   
+}
+.addVenueandAttendee .venueDetailsBox .conferenceDiv{
+    margin: 28px 0;
+    height: 390px;
+}
+.addVenueandAttendee .venueDetailsBox .conferenceDiv .availableConference{
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+.addVenueandAttendee .venueDetailsBox .conferenceDiv .availableConference:hover{
+   background: #DFF2FF;
+}
+.ocupiedHover:hover{
+    background: #F6B6B6  !important;
+}
+.ocupied-col {
+    color: #C91818 !important;
+
+}
+.ocupied-col path{
+
+    stroke: #C91818 !important;
+}
+
+.dropdownMeetingTime{
+    position: absolute;
+    top: 62px;
+    background: #fff;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0px 2px 4px 0px rgba(240, 113, 98, 0.19);
+    border-radius: 6px;
+}
+.dropdownMeetingTime ul{
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+}
+.iconCloseResp{
+    display: none;
+   }
+.dropdownMeetingTime ul li{
+    padding: 10px;
+    color: #C91818;
+    font-size: 14px;
+    border-bottom: 1px solid #F9F1F1;
+}
+.addVenueandAttendee .venueDetailsBox .conferenceDiv .availableConference .iconconference{
+    width: 20%;
+    text-align: center;
+}
+.addVenueandAttendee .venueDetailsBox .conferenceDiv .availableConference .txtconference{
+    width: 65%;
+}
+.addVenueandAttendee .venueDetailsBox .conferenceDiv .availableConference .openCloseIcon{
+    text-align: center;
+    width: 15%;
+}
+.addVenueandAttendee .venueDetailsBox .conferenceDiv .availableConference .txtconference p{
+    font-family: 'roboto-400';
+        font-size: 16px;
+        color: #242424;
+        margin: 5px;
+}
+.addVenueandAttendee .venueDetailsBox .conferenceDiv .availableConference .txtconference span{
+    font-size: 14px;
+    color: #2E844A;
+    font-family: 'roboto-500';
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+.addVenueandAttendee .venueDetailsBox .conferenceDiv .availableConference .txtconference span svg{
+    margin-right: 5px;
+}
+.addVenueandAttendee .attendeeListview{
+    border: 1px solid #D9D9D9;
+    margin: 10px 5px;
+    border-radius: 6px;
+}
+.addVenueandAttendee .attendeeListview .filterbox{
+    padding: 10px;
+}
+.addVenueandAttendee .attendeeListview .filterbox select {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #F0F0F0;
+    padding: 10px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #929292;
+}
+.addVenueandAttendee .attendeeListview .filterbox input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #F0F0F0;
+    padding: 10px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #929292;
+}
+.addVenueandAttendee .attendeeListview .tableAttendeeList  {
+    margin: 10px 0;
+    overflow: auto;
+    height: 570px;
+}
+.addVenueandAttendee .attendeeListview .tableAttendeeList table {
+    border-collapse: collapse;
+}
+.addVenueandAttendee .attendeeListview .tableAttendeeList table .mainTableheading{
+    background-color: #FFECD7;
+}
+.addVenueandAttendee .attendeeListview .tableAttendeeList table .mainTableheading th{
+    font-family: 'roboto-400';
+    font-weight: 500;
+    padding: 6px;
+    font-size: 16px;
+    color: #242424;
+    padding: 6px 8px;
+}
+.addVenueandAttendee .attendeeListview .tableAttendeeList table .mainTablerow{
+    border-bottom: 1px solid #D9D9D9;
+}
+.addVenueandAttendee .attendeeListview .tableAttendeeList table .mainTablerow td{
+    font-weight: 400;
+    padding: 5px;
+    font-size: 13px;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-break: break-all;
+}
+.empIconName {
+    display: flex;
+    align-items: center;
+}
+.empIconName .empIcon{
+    width: 10%;
+    margin: 5px;
+}
+.empIconName .empName{
+    width: 90%;
+    margin: 5px;
+}
+.empIconName .empName p{
+    color: #242424;
+    font-size: 14px;
+    margin: 5px;
+}
+.empIconName .empName span {
+    color: #929292;
+    font-size: 12px;
+    ;
+}
+.iconCircle{
+    display: flex;
+    justify-content: center;
+}
+.iconCircle .green{
+    width: 14px;
+    height: 14px;
+    background: #2e844a;
+    border-radius: 50%;
+}
 /*************************************************************************************************
                             Media Queries
 **************************************************************************************************/
@@ -3036,4 +3314,117 @@ align-items: normal;
    .assignTaskFields .FieldsWidth {
     width: 50%;
    }
+
+   /* MOM*/
+   .mom_container {
+       display: inline;
+   }
+
+   .mom_container .meetingsCardBox {
+    width: 100%;
+    overflow: hidden;
+    display: inline;
+   }
+   .mom_container .meetingsCardBox .momplanCard {
+    width: initial;
+   }
+   .mom_container .upcomingsMeetingsCard{
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+   }
+   .divHideShow{
+    display: block !important;
+   }
+   .mom_container .upcomingsMeetingsCard h4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+  .iconCloseResp{
+    display: block;
+   }
+   .meetingMainPanel {
+       display: inline;
+   }
+   .meetingMainPanel .addDetailsPanel .venueDate .datetimeBox {
+       display: inline;
+   }
+   .meetingMainPanel .addDetailsPanel {
+       width: 100%;
+   }
+
+   .meetingMainPanel .addDetailsPanel .venueDate .datetimeBox .inputDtBox {
+       padding: 5px 0px;
+   }
+
+   .meetingMainPanel .addDetailsPanel .venueSelection .inputVenueBox {
+       display: inline;
+   }
+   .meetingMainPanel .addDetailsPanel .venueSelection .inputVenueBox .venueSelectLabel {
+       width: 100%;
+       margin: 5px 0;
+   }
+   .meetingMainPanel .addDetailsPanel .venueSelection .inputVenueBox .venueselctorfield {
+       width: 100%;
+       display: inline-block;
+   }
+   .lengthCheckBox {
+       width: 100%;
+       padding: 5px 0;
+   }
+   .dnResp{
+    display: none;
+   }
+   .inputSelctionDIv {
+       width: 100%;
+       display: inline-block;
+       margin: 10px 0;
+   }
+
+   .lengthCheckBox-dummy {
+       width: 100%;
+       padding: 5px 0;
+   }
+   .addMenuMeeting {
+       width: 100%;
+       padding: 5px 0;
+   }
+   .addVenueandAttendee {
+    width: 100%;
+}
+.addVenueandAttendee .venueDetailsBox .mapDiv iframe {
+    height: 340px;
+    width: 100%;
+}
+.attendeeEmpField {
+    display: inline;
+    align-items: center;
+    margin: 10px 5px;
+}
+.attendeeEmpField .labelField {
+    width: 100%;
+    margin: 5px 0;
+}
+.attendeeEmpField .inputField {
+    width: 100%;
+    padding: 5px 0;
+}
+.attendeeEmpField .checkDIV {
+    width: 100%;
+    padding: 5px 0;
+}
+.width80padd10 {
+    width: 100%;
+    padding: 5px 0;
+}
+.momAttendee {
+    margin: 10px 5px;
+}
+.momAgenda {
+    border-radius: 6px;
+    margin: 10px 5px;
+}
 }
