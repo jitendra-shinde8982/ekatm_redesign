@@ -653,6 +653,7 @@ body {
     margin: 10px 0;
 }
 
+
 .assing-by h3 {
     margin: 0;
     color: #000;
@@ -665,10 +666,10 @@ body {
 
 .btn-msg {
     display: flex;
+    align-items: center;
     border-radius: 6px;
     border: 1px solid #0063A9;
     color: #0063A9;
-    font-family: Poppins;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -732,7 +733,6 @@ body {
 
 .popup-toggle li {
     color: #0063A9;
-    font-family: Poppins;
     font-size: 14.461px;
     font-style: normal;
     font-weight: 500;
@@ -763,12 +763,13 @@ body {
 
 .btn-timeer {
     display: flex;
+    align-items: center;
     border: none;
     padding: 8px 10px 5px 10px;
     background: #0063A9;
     color: #ffff;
     border-radius: 6px;
-    font-family: Poppins;
+    
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -3281,7 +3282,478 @@ align-items: normal;
 }
 
 /* Earlier meetings */
+.EarlierMom{
+    display: flex;
+}
+.EarlierMom .momDescription{
+    width: 75%;
+    margin: 10px;
+}
 
+.EarlierMom .momDescription .momsubject{
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.EarlierMom .momDescription .momsubject .subjectHeading {
+    background: #EAEAEA;
+    padding: 8px 10px;
+    color: #242424;
+    font-size: 16px;
+}
+.EarlierMom .momDescription .momsubject .subjectBody {
+    padding: 8px 10px;
+}
+.EarlierMom .momDescription .momsubject .subjectBody p{
+    margin: 5px 0;
+    color: #242424;
+    font-size: 16px;
+}
+
+.EarlierMom .momDescription .momAgendaDetails{
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.EarlierMom .momDescription .momAgendaDetails .agendaHeading{
+    background: #EAEAEA;
+    padding: 8px 10px;
+    color: #242424;
+    font-size: 16px;
+}
+.EarlierMom .momDescription .momAgendaDetails .agendaDiscription{
+    padding: 8px 10px;
+    overflow: auto;
+    height: 180px;
+}
+.EarlierMom .momDescription .momAgendaDetails .agendaDiscription p{
+    margin: 5px 0;
+    color: #242424;
+    font-size: 16px;
+}
+.EarlierMom .momDescription .momAgendasuggestion{
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+}
+.EarlierMom .momDescription .momAgendasuggestion .suggestionBoxHeading{
+    background: #EAEAEA;
+    padding: 8px 10px;
+}
+.EarlierMom .momDescription .momAgendasuggestion .suggestionBoxDiscription{
+    padding: 8px 10px;
+    overflow: auto;
+    height: 180px;
+}
+.EarlierMom .momDescription .momAgendasuggestion .suggestionBoxDiscription p{
+    margin: 5px 0;
+    color: #242424;
+    font-size: 16px;
+}
+
+.EarlierMom .momParticipantsDetails{
+    width: 25%;
+    margin: 20px 5px;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+
+}
+.EarlierMom .momParticipantsDetails .detailsMenu{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    padding: 0 5px;
+}
+.EarlierMom .momParticipantsDetails .detailsMenu .menulabel{
+    color: #242424;
+    font-size: 16px;
+}
+.menuLabelcol{
+    color: #0063ae !important;
+    text-decoration: underline !important;
+}
+.EarlierMom .momParticipantsDetails .detailsDateBox{
+    display: flex;
+    margin: 10px 0;
+}
+.EarlierMom .momParticipantsDetails .detailsDateBox .inputsubbox{
+    width: 50%;
+    padding: 0 5px;
+}
+.EarlierMom .momParticipantsDetails .detailsDateBox .inputsubbox input{
+    width: 100%;
+    box-sizing: border-box;
+    color: #242424;
+    font-size: 16px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #F0F0F0;
+}
+.inputSelctionMenuBox{
+    margin: 10px 0;
+}
+.inputSelctionMenuBox .labelDiv{
+    padding: 5px;
+    color: #242424;
+    font-size: 16px;
+}
+.inputSelctionMenuBox .inputDiv{
+    padding: 5px;
+}
+.inputSelctionMenuBox .inputDiv input{
+    width: 100%;
+    box-sizing: border-box;
+    color: #242424;
+    font-size: 16px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #F0F0F0;
+}
+.buttonHeadingDiv{
+    background: #EAEAEA;
+    padding: 3px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttonHeadingDiv .leftSideActionBtns{
+    display: flex;
+    align-items: center;
+}
+.buttonHeadingDiv .leftSideActionBtns .redlabelbtn{
+    border: 1px solid #C91818;
+    border-radius: 6px;
+    padding: 8px 10px;
+    margin: 5px;
+    background: #F6B6B6;
+    color: #242424;
+    font-size: 16px;
+}
+.buttonHeadingDiv .leftSideActionBtns .redlabelbtn label{
+    margin: 0 5px;
+}
+.buttonHeadingDiv .leftSideActionBtns .redlabelbtn span{
+    margin: 0 5px;
+}
+.buttonHeadingDiv .leftSideActionBtns .greenlabelbtn{
+    border: 1px solid #2E844A;
+    border-radius: 6px;
+    padding: 8px 10px;
+    margin: 5px;
+    background: #CDEFC4;
+    color: #242424;
+    font-size: 16px;
+}
+.buttonHeadingDiv .leftSideActionBtns .greenlabelbtn label{
+    margin: 0 5px;
+}
+.buttonHeadingDiv .leftSideActionBtns .greenlabelbtn span{
+    margin: 0 5px;
+}
+.buttonHeadingDiv .rightSideActionBtns {
+    margin: 0 5px;
+}
+.buttonHeadingDiv .rightSideActionBtns .recurrencelabelunderline {
+    color: #0063ae;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 5px;
+}
+.buttonHeadingDiv .rightSideActionBtns .recurrencelabelunderline:hover{
+    text-decoration: underline;
+}
+.attendeeList{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d9d9d9;
+}
+.attendeeList .iconUserlist{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+.attendeeList .iconUserlist p {
+    width: 24px;
+    height: 24px;
+    color: #242424;
+    font-size: 16px;
+    background: #ff7676;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.attendeeList .TextUserlist {
+    width: 85%;
+}
+.attendeeList .TextUserlist p{
+    margin: 5px 0;
+    font-size: 16px;
+    color: #242424;
+}
+.attendeeList .TextUserlist span{
+    font-size: 14px;
+    color: #929292;
+}
+.meetingChats{
+    position: relative;
+}
+.meetingChats .chatsHeading{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background: #DEF1FF;
+}
+.meetingChats .chatsHeading .chatRoomIcon{
+    width: 15%;
+    text-align: center;
+}
+.meetingChats .chatsHeading .chatRoomLabel{
+    width: 75%;
+}
+.meetingChats .chatsHeading .chatRoomLabel{
+    width: 75%;
+}
+.meetingChats .chatsHeading .chatRoomLabel p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #242424;
+}
+.meetingChats .chatsHeading .chatRoomLabel label {
+    font-size: 12px;
+    color: #242424;
+    font-family: 'roboto-300';
+}
+.meetingChats .chatsHeading .chatRoomInfoIcon {
+    width: 10%;
+    text-align: center;
+}
+.meetingChats .chatsBody{
+    height: 61vh;
+    overflow-y: auto;
+}
+.meetingChats .chatsFooter{
+    display: flex;
+    padding: 5px 15px;
+}
+.meetingChats .chatsFooter .chatsInputBox{
+    position: relative;
+    width: 90%;
+    margin: 0 5px;
+}
+.meetingChats .chatsFooter .chatsInputBox input{
+    font-size: 16px;
+    color: #242424;
+    padding: 7px 10px;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    height: auto;
+}
+.meetingChats .chatsFooter .chatsInputBox button{
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    padding: 3px 6px;
+    background: #fff;
+}
+.meetingChats .chatsFooter .chatsreplybtn{
+    background: #0063a9;
+    border: none;
+    outline: linen;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+.meetingsAction{
+    display: flex;
+    margin: 10px;
+    background: #FEE8D1;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.meetingsAction .userIconDiv{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+}
+.meetingsAction .userIconDiv p {
+    width: 34px;
+    height: 34px;
+    color: #242424;
+    font-size: 16px;
+    background: #ff7676;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.meetingsAction .userTask{
+    width: 75%;
+}
+.meetingsAction .userTask p{
+    margin: 5px 0;
+    font-size: 18px;
+    font-family: 'roboto-500';
+}
+.meetingsAction .userTask span{
+    font-size: 16px;
+    color: #242424;
+}
+.meetingsAction .userAction {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.meetingsAction .userAction .btnEdit{
+    border: none;
+    outline: none;
+    background: #E4F4FF;
+    padding: 7px 6px;
+    border-radius: 5px;;
+}
+.meetingsAction .userAction .btnDelete{
+    border: none;
+    outline: none;
+    background: #FFCECE;
+    padding: 7px 6px;
+    border-radius: 5px;
+}
+.popupActivityMom{
+    background-color: rgb(0 0 0 / 39%);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.popupActivityMom{
+    background-color: rgb(0 0 0 / 39%);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.popupActivityMom .subPopupActivity{
+    background: #ffff;
+    width: 96%;
+    margin: 22px auto;
+}
+.scroll-400{
+    height: 500px;
+    overflow: auto;
+}
+.actCardDropdwon{
+    position: absolute;
+    background: #fff;
+    width: 380px;
+    border-radius: 10px;
+    box-shadow: -2px -2px 4px 0px rgba(0, 0, 0, 0.10), 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    top: 71px;
+    border: 1px solid #E7E7E7;
+}
+.actCardDropdwon .polygonCard{
+    position: absolute;
+    top: -14px;
+    right: 110px;
+}
+.actCardDropdwon .cardActBtns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.actCardDropdwon .cardActBtns .datemonth h4{
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'roboto-400';
+    background: #0063af;
+    padding: 5px 10px;
+    font-weight: 400;
+    border-radius: 5px 5px 0 0;
+}
+.actCardDropdwon .cardActBtns .datemonth p{
+    margin: 0;
+    font-size: 16px;
+    color: #242424;
+    font-weight: 400;
+    border: 1px solid #242424;
+    padding: 5px 10px;
+    border-radius: 0 0 5px 5px;
+}
+.actCardDropdwon .cardActBtns .FullDate button{
+    background: #cdefc4;
+    padding: 8px 26px;
+    border: none;
+    outline: none;
+    color: #242424;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: 'roboto-500';
+}
+.actCardDropdwon .activityCardsHeading{
+    margin: 10px 0;
+    font-size: 16px;
+    color: #242424;
+    padding: 0 10px;
+}
+.actCardDropdwon .activityCardsType{
+    margin: 28px 0;
+    padding: 0 10px;
+}
+.actCardDropdwon .activityCardsType span{
+    border: 1px solid #0063A9;
+    font-size: 16px;
+    padding: 5px 10px;
+    color: #242424;
+    border-radius: 5px;
+    margin: 5px;
+}
+.actCardDropdwon .actAssignedBy{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.actCardDropdwon .actAssignedBy p{
+    color: #242424;
+    font-size: 16px;
+    width: 30%;
+    margin: 6px 0;
+}
+
+.actCardDropdwon .actAssignedBy .userIconAct p{
+    width: 26px;
+    height: 26px;
+    color: #242424;
+    font-size: 16px;
+    background: #ff7676;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.actCardDropdwon .actCardfooter{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid #E7E7E7;
+}
 
 /*************************************************************************************************
                             Media Queries
@@ -3703,4 +4175,60 @@ align-items: normal;
    .popUpFormField {
        display: inline;
    }
+   .EarlierMom{
+    display: inline;
+   }
+   .EarlierMom .momDescription {
+       width: auto;
+   }
+   .EarlierMom .momParticipantsDetails {
+       width: auto;
+       margin: 20px 10px;
+   }
+   .buttonHeadingDiv {
+       padding: 3px 5px;
+       justify-content: inherit;
+       align-items: inherit;
+       flex-direction: column-reverse;
+   }
+   .btnPadd10{
+    padding: 10px !important;
+   }
+   .buttonHeadingDiv .leftSideActionBtns{
+    justify-content: space-between;
+    margin-bottom: 6px;
+   }
+   .buttonHeadingDiv .rightSideActionBtns {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin: 12px 0 !important;
+   }
+   .meetingsAction {
+       display: inline-block;
+   }
+   .meetingsAction .userIconDiv {
+       width: 100%;
+       justify-content: inherit;
+   }
+   .meetingsAction .userTask {
+       width: 100%;
+   }
+
+   .meetingsAction .userAction {
+       width: 100%;
+       margin-top: 10px;
+       justify-content: space-between;
+   }
+
+   .marLeft0Resp {
+       margin-left: 0 !important;
+   }
+   .actCardDropdwon .polygonCard {
+       right: 60%;
+   }
+   .actCardDropdwon {
+    width: 100%;
+    top: 57px;
+}
 }
